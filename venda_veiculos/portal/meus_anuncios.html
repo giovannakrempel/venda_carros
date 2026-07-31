@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Anúncios - AutoAnúncios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AutoAnúncios - Área Restrita</a>
+            <div class="ms-auto">
+                <a class="btn btn-outline-light btn-sm" href="../index.html">Sair</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <h3 class="mb-4">Meus Anúncios</h3>
+            <div id="myAds" class="row g-4">
+                <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                        <img src="../veiculos/palio20.jpg" class="card-img-top" alt="Fiat Palio">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Fiat Palio</h5>
+                            <p class="mb-2">Ano: 2018</p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="../veiculo.html" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                <button class="btn btn-outline-secondary btn-sm" onclick="alert('Interesses (simulado)')">Ver Interesses</button>
+                                <button class="btn btn-danger btn-sm" onclick="removeCard(this)">Excluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                        <img src="../veiculos/fiesta22.jpg" class="card-img-top" alt="Ford Fiesta">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ford Fiesta</h5>
+                            <p class="mb-2">Ano: 2020</p>
+                            <div class="mt-auto d-flex gap-2">
+                                <a href="../veiculo.html" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                <button class="btn btn-outline-secondary btn-sm" onclick="alert('Interesses (simulado)')">Ver Interesses</button>
+                                <button class="btn btn-danger btn-sm" onclick="removeCard(this)">Excluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center small py-3 bg-light">&copy; 2026 AutoAnúncios</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function removeCard(btn) {
+            if (!confirm('Confirma exclusão do anúncio?')) return;
+            var card = btn.closest('.col-12');
+            if (card) card.remove();
+        }
+    </script>
+</body>
+</html>

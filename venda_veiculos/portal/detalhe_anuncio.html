@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhe do Anúncio - AutoAnúncios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AutoAnúncios - Área Restrita</a>
+      <div class="ms-auto">
+        <a class="btn btn-outline-light btn-sm" href="../index.html">Sair</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div id="carouselFotos" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../veiculos/palio20.jpg" class="d-block w-100" alt="Foto 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../veiculos/palio20-2.jpg" class="d-block w-100" alt="Foto 2" onerror="this.style.display='none'">
+              </div>
+              <div class="carousel-item">
+                <img src="../veiculos/palio20-3.jpg" class="d-block w-100" alt="Foto 3" onerror="this.style.display='none'">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Fiat Palio</h3>
+              <p><strong>Ano:</strong> 2020</p>
+              <p><strong>Quilometragem:</strong> 55.000 km</p>
+              <p><strong>Estado/Cidade:</strong> SP - São Paulo</p>
+              <p><strong>Valor:</strong> R$ 45.000,00</p>
+              <p><strong>Descrição:</strong> Veículo em ótimo estado, único dono, com todas as revisões em dia.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="col-12 col-lg-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Ações</h5>
+              <a href="meus_anuncios.html" class="btn btn-outline-secondary w-100 mb-2">Voltar</a>
+              <a href="interesses.html" class="btn btn-primary w-100 mb-2">Ver Interesses</a>
+              <button class="btn btn-danger w-100" onclick="alert('Excluir (simulado)')">Excluir Anúncio</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6>Contato do anunciante</h6>
+              <p>Telefone: (11) 9 9999-9999</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center small py-3 bg-light">&copy; 2026 AutoAnúncios</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
